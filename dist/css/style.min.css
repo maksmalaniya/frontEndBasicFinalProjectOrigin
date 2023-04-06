@@ -1,0 +1,1 @@
+h1{color:red;font-size:20px;line-height:22px;display:-webkit-box;display:-ms-flexbox;display:flex}p{font-size:14px}p+p{font-size:20px;font-size:40px}@media(min-width: 768px){p{font-size:16px;color:red}p+p{font-size:30px;color:red}}

@@ -1,0 +1,11 @@
+@import 'reset';
+@import 'vars';
+@import 'fonts';
+
+
+h1 {
+    font-family: 'MontserratBold';
+    background: $red-text-gradient;
+    color: transparent;
+    background-clip: text;
+}
