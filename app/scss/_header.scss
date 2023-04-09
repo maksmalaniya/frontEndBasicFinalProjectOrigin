@@ -153,26 +153,97 @@
     // .header__nav
 
     &__nav {
+        position: fixed;
+        bottom: 0;
+        right: 8px;
+        left: 8px;
+        background: $white-color;
+        padding: 56.5px 12px 12px 12px;
+        border-radius: 12px 12px 0 0;
+        //transform: translateY(101%);
+        &:active {
+            transform: translate(0);
+        }
+        @media (min-width: $breakpoint-md) {
+            position: static;
+            border-radius: unset;
+            background: transparent;
+            margin-top: 30px;
+        }
     }
 
     // .header__nav-close
 
     &__nav-close {
+        position: absolute;
+        top: 19px;
+        right: 19px;
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 25px;
+            height: 2px;
+            background: $accent-color;
+            transform: rotate(40deg);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 25px;
+            height: 2px;
+            background: $accent-color;
+            transform: rotate(140deg);
+        }
+        @media (min-width: $breakpoint-md) {
+            display: none;
+        }
     }
 
     // .header__nav-list
 
     &__nav-list {
+        @media (min-width: $breakpoint-md) {
+            display: flex;
+            gap: 15px;
+        }
     }
 
     // .header__nav-item
 
     &__nav-item {
+        text-align: center;
     }
 
     // .header__nav-link
 
     &__nav-link {
+        display: block;
+        margin: 7.5px auto;
+        padding: 7px 0;
+        width: 335px;
+        height: 43px;
+        border-radius: 12px;
+        color: $active-regular-color;
+        background: $grey-bg-color;
+        font-family: 'MontserratBold';
+        text-decoration: none;
+        &:active{
+            color: $accent-color;
+        }
+        @media (min-width: $breakpoint-md) {
+            background: transparent;
+            margin: 0;
+            padding: 0;
+            display: inline;
+            color: $white-color;
+        }
     }
 
     // .header__inner
