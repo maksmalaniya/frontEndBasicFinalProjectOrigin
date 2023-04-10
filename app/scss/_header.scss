@@ -1,9 +1,11 @@
 .header {
     color: $white-color;
     background: url(../images/Symbol.svg) no-repeat 50%/auto 100%;
+
     // .header__container
 
     &__container {
+        
     }
 
     // .header__main
@@ -12,11 +14,21 @@
         min-height: 100vh;
         display: flex;
         flex-flow: column;
+        //flex: 0 0 30%;
+
+        @media (min-width: $breakpoint-md) {
+            display: flex;
+            flex-flow: column;
+            //flex: 0 0 30%;
+        }
     }
 
     // .header__head
 
     &__head {
+        @media (min-width:$breakpoint-lg){
+
+        }
     }
 
     // .header__social
@@ -30,9 +42,16 @@
         margin: 0 -30px 15px;
 
         @media (min-width: $breakpoint-md) {
-            margin: 0 0 30px;
+            margin: 0 0 18px;
             padding: 10px 0;
             background: transparent;
+            align-self: flex-start;
+            justify-content: left;
+            margin-top: 50px;
+        }
+        @media (min-width: $breakpoint-lg) {
+            //align-self: flex-end;
+            justify-content: right;
         }
     }
 
@@ -60,6 +79,36 @@
 
     &__social-adress {
         display: none;
+        position: relative;
+        @media (min-width: $breakpoint-md) {
+            display: inline;
+            color: $grey-text-color;
+            padding: 0 18px 0 18px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 6px;
+                //transform: translateX(0px);
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: $grey-separator-color;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 6px;
+                //transform: translateX(0px);
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: $grey-separator-color;
+            }
+        }
     }
 
     // .header__social-phone
@@ -68,12 +117,31 @@
         color: $white-color;
         text-decoration: none;
         font-weight: 700;
+        @media (min-width:$breakpoint-md) {
+            position: relative;
+            margin-right: 18px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -12px;
+                //transform: translateX(0px);
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: $grey-separator-color;
+            }
+        }
     }
 
     // .header__social-facebook
 
     &__social-facebook {
         display: none;
+        @media (min-width:$breakpoint-md) {
+            display: inline-block;
+        }
     }
 
     // .header__logo
@@ -93,6 +161,18 @@
         span + span {
             font-size: 20px;
             color: $white-color;
+        }
+
+        @media (min-width: $breakpoint-lg) {
+            position: absolute;
+            top: 50px;
+            left: 60px;
+        }
+
+        @media (min-width: $breakpoint-xxl) {
+            position: absolute;
+            top: 50px;
+            left: 160px;
         }
     }
 
@@ -137,6 +217,10 @@
             height: 14px;
             border-bottom: 2px solid $white-color;
             border-top: 2px solid $white-color;
+
+            @media (min-width: $breakpoint-md) {
+                display: none;
+            }
             &::before {
                 content: '';
                 position: absolute;
@@ -146,6 +230,10 @@
                 left: 0;
                 transform: translateY(-50%);
                 background: $white-color;
+
+                @media (min-width: $breakpoint-md) {
+                    display: none;
+                }
             }
         }
     }
@@ -168,7 +256,14 @@
             position: static;
             border-radius: unset;
             background: transparent;
-            margin-top: 30px;
+            //margin-top: 30px;
+            padding: 0;
+        }
+
+        @media (min-width: $breakpoint-lg) {
+            display: flex;
+            align-self: flex-end;
+            justify-content: right;
         }
     }
 
@@ -249,11 +344,15 @@
     // .header__inner
 
     &__inner {
+        //flex: 1, 1, 50%;
+
     }
 
     // .header__inner-title
 
     &__inner-title {
+        
+        text-align: center;
     }
 
     // .header__goto
@@ -261,8 +360,7 @@
     &__goto {
     }
 }
-.container {
-}
+
 .header-social {
 
     // .header-social__item
