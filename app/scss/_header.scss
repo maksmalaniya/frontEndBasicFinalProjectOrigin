@@ -2,14 +2,6 @@
     color: $white-color;
     background: url(../images/Symbol.svg) no-repeat 50%/auto 100%;
 
-    // .header__container
-
-    &__container {
-        
-    }
-
-    // .header__main
-
     &__main {
         min-height: 100vh;
         display: flex;
@@ -23,16 +15,10 @@
         }*/
     }
 
-    // .header__head
-
     &__head {
         position: relative;
-        @media (min-width:$breakpoint-lg){
-
-        }
     }
 
-    // .header__social
 
     &__social {
         display: flex;
@@ -55,8 +41,6 @@
         }
     }
 
-    // .header__lang
-
     &__lang {
         display: flex;
         font-size: 12px;
@@ -64,7 +48,6 @@
         font-weight: 700;
     }
 
-    // .header__lang-item
 
     &__lang-item {
         padding: 5px 7px;
@@ -74,8 +57,6 @@
             background: $accent-color;
         }
     }
-
-    // .header__social-adress
 
     &__social-adress {
         display: none;
@@ -109,8 +90,6 @@
         }
     }
 
-    // .header__social-phone
-
     &__social-phone {
         color: $white-color;
         text-decoration: none;
@@ -132,16 +111,12 @@
         }
     }
 
-    // .header__social-facebook
-
     &__social-facebook {
         display: none;
         @media (min-width:$breakpoint-md) {
             display: inline-block;
         }
     }
-
-    // .header__logo
 
     &__logo {
         position: relative;
@@ -174,21 +149,15 @@
         }
     }
 
-    // .header__logo-link
-
     &__logo-link {
         width: 69px;
         height: 32px;
     }
 
-    // .header__logo-logo
-
     &__logo-logo {
         width: 100%;
         height: 100%;
     }
-
-    // .header__burger
 
     &__burger {
         position: absolute;
@@ -236,8 +205,6 @@
         }
     }
 
-    // .header__nav
-
     &__nav {
         position: fixed;
         z-index: 20;
@@ -265,8 +232,6 @@
             justify-content: right;
         }
     }
-
-    // .header__nav-close
 
     &__nav-close {
         position: absolute;
@@ -300,8 +265,6 @@
         }
     }
 
-    // .header__nav-list
-
     &__nav-list {
         @media (min-width: $breakpoint-md) {
             display: flex;
@@ -309,13 +272,9 @@
         }
     }
 
-    // .header__nav-item
-
     &__nav-item {
         text-align: center;
     }
-
-    // .header__nav-link
 
     &__nav-link {
         display: block;
@@ -346,21 +305,9 @@
         }
     }
 
-    // .header__inner
-
-    &__inner {
-        //flex: 1, 1, 50%;
-
-    }
-
-    // .header__inner-title
-
     &__inner-title {
-        
         text-align: center;
     }
-
-    // .header__goto
 
     &__goto {
         margin: 0 auto 30px;
@@ -383,14 +330,4 @@
             transform: rotate(-45deg);
         }
     }
-}
-
-.header-social {
-
-    // .header-social__item
-
-    &__item {
-    }
-}
-.main-title {
 }

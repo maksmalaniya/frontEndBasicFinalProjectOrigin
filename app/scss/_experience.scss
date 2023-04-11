@@ -1,0 +1,108 @@
+.experience {
+    padding: 30px 0;
+
+    &__tabs { 
+        @media (min-width: $breakpoint-lg) {
+        display: flex;
+        flex-flow: row;
+        }
+        
+        @media (min-width: $breakpoint-xxl) {
+            
+        }
+    }
+
+    &__tab {
+        display: flex;
+        gap: 30px;
+        white-space: nowrap;
+        overflow: auto hidden;
+        margin-right: -30px;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        @media (min-width: $breakpoint-md) {
+            margin-right: calc(324px - 50vw);
+        }
+
+        @media (min-width: $breakpoint-lg) {
+            flex-flow: column;
+            overflow: unset;
+            white-space: normal;
+            margin: 0;
+            align-items: flex-end;
+            //flex: 1 1 50%;
+        }
+
+        @media (min-width: $breakpoint-xl) {
+            flex: 1 1 42%;
+        }
+
+        @media (min-width: $breakpoint-xl) {
+            flex: 1 1 37%;
+        }
+    }
+
+    &__tab-link {
+        color: $grey-text-color;
+        text-decoration: none;
+        font-size: 38px;
+        line-height: 40px;
+        font-family: 'MontserratBold';
+        &.active {
+            background: $red-text-gradient;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+
+    &__content {
+        margin: 60px 0;
+        border-top: 4px solid $white-color;
+        padding-top: 60px;
+        @media (min-width: $breakpoint-lg) {
+            border-top: none;
+            border-left: 4px solid $white-color;
+            padding-top: 0;
+            padding-left: 60px;
+            margin: 0;
+            margin-left: 60px;
+            display: flex;
+            flex: 1 1 50%;
+            align-items: center;
+        }
+
+        @media (min-width: $breakpoint-xl) {
+            flex: 1 1 58%;
+        }
+
+        @media (min-width: $breakpoint-xl) {
+            flex: 1 1 63%;
+        }
+    }
+
+    &__content-item {
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 32px;
+        color: $white-color;
+        font-family: 'MontserratBold';
+    }
+
+    p {
+        color: $white-color;
+        font-size: 19px;
+        line-height: 21px;
+        margin-top: 30px;
+    }
+}
+
+.container {
+}
