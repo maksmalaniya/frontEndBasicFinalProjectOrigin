@@ -1,32 +1,36 @@
 .team {
     position: relative;
     padding: 30px 0;
-    // .team_iner-link
+    margin-top: 50px;
 
     &_inner-link {
+        color: $active-active-color;
+        font-family: 'MontserratBold';
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration: none;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            width: 4px;
+            height: 4px;
+            border-right: 2px solid $active-regular-color;
+            border-bottom: 2px solid $active-regular-color;
+            transform: translateY(-50%) rotate(-40deg);
+        }
     }
-
-    // .team__swiper
-
-    &__swiper {
-    }
-
-    // .team__wrapper
-
-    &__wrapper {
-    }
-
-    // .team__slide
 
     &__slide {
         background: $grey-bg-color;
         border-radius: 12px;
+        overflow: hidden;
         @media (min-width: $breakpoint-lg) {
             display: flex;
         }
     }
-
-    // .team__image
 
     &__image {
         height: 500px;
@@ -41,23 +45,48 @@
         }
     }
 
-    // .team__inner
-
     &__inner {
+        padding: 30px;
     }
-
-    // .team__inner-name
 
     &__inner-name {
+        padding-top: 30px;
+        color: $grey-text-color;
+        
+        p {
+            font-family: 'MontserratBold';
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        p + p {
+            font-size: 14px;
+            line-height: 22px;
+            font-family: 'Montserrat';
+            margin-top: 6px;
+        }
+    }
+
+    &__pagination{
+        &.swiper-pagination{
+            bottom: -30px;
+        }
+
+        .swiper-pagination-bullet {
+            height: 16px;
+            width: 16px;
+            &.swiper-pagination-bullet-active {
+                color: $active-regular-color;
+            }
+        }
     }
 }
-.container {
-}
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-pagination {
+
+h3 {
+    font-size: 30px;
+    line-height: 37px;
+    font-family: 'MontserratBold';
+    background: $red-text-gradient;
+    background-clip: text;
+    color: transparent;
 }

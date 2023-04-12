@@ -11,6 +11,29 @@ body {
 
 .wrapper {
     background: $supersoft-gradient;
+    position: relative;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.wrapper::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    width: calc(100% - 40px);
+    height: 10px;
+    background: #CACADB;
+    border-radius: 0px 0px 12px 12px;
+}
+.wrapper::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    width: calc(100% - 80px);
+    height: 10px;
+    background: #E7E7F2;
+    border-radius: 0px 0px 12px 12px;
 }
 
 .container {
