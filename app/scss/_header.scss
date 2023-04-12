@@ -205,7 +205,7 @@
         }
     }
 
-    /*&__nav {
+    &__nav {
         position: fixed;
         z-index: 20;
         bottom: 0;
@@ -214,9 +214,10 @@
         background: $white-color;
         padding: 56.5px 12px 12px 12px;
         border-radius: 12px 12px 0 0;
-        //transform: translateY(101%);
+        //ВАЖНЫЙ МОМЕНТ
+        transform: translateY(100%);
         &:active {
-            transform: translate(0);
+            transform: translateY(0);
         }
         @media (min-width: $breakpoint-md) {
             position: static;
@@ -329,5 +330,5 @@
             border-bottom: 2px solid $white-color;
             transform: rotate(-45deg);
         }
-    }*/
+    }
 }
