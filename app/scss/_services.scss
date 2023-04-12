@@ -1,6 +1,5 @@
 .services {
     
-
     &__link {
         display: inline-block;
         color: $active-regular-color;
@@ -21,8 +20,6 @@
             transform: translateY(-50%) rotate(-42deg);
         }
     }
-
-    // .services__title
 
     &__title {
         margin-top: 10px;
@@ -78,13 +75,6 @@
             margin-top: 15px;
         }
     }
-
-    // .services__card-image
-
-    &__card-image {
-    }
-
-    // .services__card-textcontent
 
     &__card-textcontent {
         margin-top: 30px;

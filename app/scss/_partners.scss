@@ -1,0 +1,97 @@
+.partners {
+
+    &__title {
+        margin: 60px 0 30px 0;
+        color: $main-color;
+        text-align: center;
+    }
+
+    // .partners__cards
+
+    &__cards {
+        height: 720px;
+        overflow: hidden;
+        @media (min-width: $breakpoint-md) {
+            height: 100%;
+            overflow: visible;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    // .partners__card
+
+    &__card {
+        width: 100%;
+        height: 120px;
+        background: #1C4280;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 33%;
+        @media (min-width: $breakpoint-lg) {
+            flex: 25%;
+        }
+        &:nth-child(2) {
+            background: #143646;
+            
+        }
+        &:nth-child(3) {
+            background: #F48B30;
+            
+        }
+        &:nth-child(4) {
+            background: #9E4DC3;
+            
+        }
+        &:nth-child(5) {
+            background: #FD9339;
+            
+        }
+        &:nth-child(6) {
+            background: #E2E2E4;
+            
+        }
+        &:nth-child(7) {
+            background: #C71C36;
+            
+            
+        }
+        &:nth-child(8) {
+            background: #DCF3F9;
+            
+            
+        }
+        &:nth-child(9) {
+            background: #EAEAEA;
+            
+            
+        }
+        &:nth-child(10) {
+            background: #282240;
+            
+            
+        }
+        &:nth-child(11) {
+            background: #1D4568;
+            
+            
+        }
+        &:nth-child(12) {
+            background: #000000;
+            
+    
+        }
+    }
+
+    // .partners__card-background
+
+    &__card-background {
+    }
+
+    // .partners__card-image
+
+    &__card-image {
+    }
+}
