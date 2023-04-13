@@ -115,6 +115,10 @@
         display: none;
         @media (min-width:$breakpoint-md) {
             display: inline-block;
+            width: 24px;
+            height: 24px;
+            
+            
         }
     }
 
