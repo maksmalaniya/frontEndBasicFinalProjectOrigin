@@ -1,0 +1,96 @@
+.publications {
+
+    &__link {
+        font-size: 14px;
+        font-family: 'MontserratBold';
+        line-height: 17px;
+        color: $active-regular-color;
+        text-decoration: none;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            top: 50%;
+            right: -10px;
+            border-right: 2px solid $active-regular-color;
+            border-bottom: 2px solid $active-regular-color;
+            transform: translateY(-50%) rotate(-42deg);
+        }
+    }
+
+    &__title {
+        margin-top: 5px;
+        background: $red-text-gradient;
+        background-clip: text;
+        color: transparent;
+        font-family: 'MontserratBold';
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    &__cards {
+        @media (min-width: $breakpoint-md) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+
+    &__card {
+        background: $white-color;
+        margin-top: 30px;
+        border-radius: 8px;
+        @media (min-width: $breakpoint-md) {
+            flex: 1 1 47%;
+        }
+
+        @media (min-width: $breakpoint-lg) {
+            flex: 1 1 31%;
+        }
+    }
+
+    &__card-content {
+        padding: 30px;
+    }
+
+    &__card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @media (min-width: $breakpoint-md) {
+            width: 100%;
+            height: 200px;
+        }
+    }
+
+    &__card-link {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: 'MontserratBold';
+        color: $active-regular-color;
+        text-decoration: none;
+        margin-top: 30px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__card-date {
+        font-size: 12px;
+        line-height: 15px;
+        font-family: 'MontserratBold';
+        color: $grey-text-color;
+        margin-top: 15px;
+    }
+
+    &__card-text {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 4px solid $grey-separator-color;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

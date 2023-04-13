@@ -6,8 +6,6 @@
         text-align: center;
     }
 
-    // .partners__cards
-
     &__cards {
         height: 720px;
         overflow: hidden;
@@ -19,8 +17,6 @@
             flex-wrap: wrap;
         }
     }
-
-    // .partners__card
 
     &__card {
         width: 100%;
@@ -83,15 +79,5 @@
             
     
         }
-    }
-
-    // .partners__card-background
-
-    &__card-background {
-    }
-
-    // .partners__card-image
-
-    &__card-image {
     }
 }
