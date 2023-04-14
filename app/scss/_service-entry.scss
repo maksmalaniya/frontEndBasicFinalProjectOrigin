@@ -1,0 +1,100 @@
+.services {
+    
+    &.services-margin{
+        margin-top: 60px;
+    }
+
+    &.one-service {
+        padding-bottom: 60px;
+    }
+
+    &__but {
+        display: inline-block;
+        padding: 18px 30px;
+        background: $active-regular-color;
+        margin-top: 28px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        color: $white-color;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'MontserratBold';
+    }
+
+    .first-element {
+        text-align: center;
+    }
+
+    .service-image {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .card-title {
+        background: $red-text-gradient;
+        background-clip: text;
+        color: transparent;
+        font-size: 36px;
+        line-height: 46px;
+        font-family: 'MontserratBold';
+        }
+
+    .card-textcontent {
+        color: $white-color;
+        font-size: 19px;
+        line-height: 30px;
+        font-family: 'Montserrat';
+        }
+}
+
+.all-services {
+    border-top: 4px solid rgba(255, 255, 255, 0.5);
+    margin-top: 30px;
+    padding-top: 30px;
+    // .all-services__title
+
+    &__title {
+        font-size: 22px;
+        line-height: 27px;
+        font-family: 'MontserratBold';
+        color: $white-color;
+        margin-bottom: 30px;
+    }
+
+    // .all-services__items
+
+    &__items {
+        @media (min-width: $breakpoint-md) {
+            display: flex;
+            gap: 74px;
+            //flex-direction: column;
+            //flex-wrap: wrap;
+        }
+    }
+
+    // .all-services__item
+
+    &__part {
+        flex: 0 0 50%;
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 15px;
+        color: $white-color;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: -8px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: $accent-color;
+        }
+        @media (min-width: $breakpoint-md) {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}
