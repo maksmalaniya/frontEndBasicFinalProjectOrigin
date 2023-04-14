@@ -7,12 +7,6 @@
         display: flex;
         flex-flow: column;
         justify-content: space-between;
-
-       /* @media (min-width: $breakpoint-md) {
-            display: flex;
-            flex-flow: column;
-            
-        }*/
     }
 
     &__head {
@@ -116,9 +110,7 @@
         @media (min-width:$breakpoint-md) {
             display: inline-block;
             width: 24px;
-            height: 24px;
-            
-            
+            height: 24px;   
         }
     }
 
