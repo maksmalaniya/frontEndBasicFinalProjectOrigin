@@ -8,7 +8,7 @@
 
     &__cards {
         height: 720px;
-        overflow: hidden;
+        overflow: scroll;
         @media (min-width: $breakpoint-md) {
             height: 100%;
             overflow: visible;

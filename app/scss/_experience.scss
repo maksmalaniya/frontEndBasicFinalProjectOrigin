@@ -55,6 +55,11 @@
             background-clip: text;
             color: transparent;
         }
+        &:hover {
+            background: $red-text-gradient;
+            background-clip: text;
+            color: transparent;
+        }
     }
 
     &__content {
@@ -102,7 +107,4 @@
         line-height: 21px;
         margin-top: 30px;
     }
-}
-
-.container {
 }

@@ -21,6 +21,13 @@
             border-bottom: 2px solid $active-regular-color;
             transform: translateY(-50%) rotate(-40deg);
         }
+        &:hover {
+            color: $accent-color;
+            &::after {
+                border-right: 2px solid $accent-color;
+                border-bottom: 2px solid $accent-color;
+            }
+        }
     }
 
     &__slide {
