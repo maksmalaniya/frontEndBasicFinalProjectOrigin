@@ -1,0 +1,100 @@
+.publications {
+    background: none;
+    color: $grey-text-color;
+
+}
+
+.publications-item {
+    &.active {
+        background: $accent-color;
+        color: $white-color;
+    }
+    &:hover {
+        background: $accent-color;
+        color: $white-color;
+    }
+}
+
+.publications-span {
+    color: $accent-color;
+}
+
+.publications-header-logo span + span {
+    color: $main-color;
+}
+
+.publications-link {
+    color: $active-regular-color;
+    &:active{
+        color: $accent-color;
+    }
+    &:hover{
+        color: $accent-color;
+    }
+    @media (min-width: $breakpoint-md) {
+        color: $active-regular-color;
+        &:active{
+            color: $accent-color;
+        }
+        &:hover{
+            color: $accent-color;
+        }
+    }
+}
+
+.publications-phone {
+    color: $grey-text-color;
+}
+
+.publications-facebook {
+    fill: $grey-text-color;
+    @media (min-width:$breakpoint-md) {
+        fill: $grey-text-color;
+    }
+}
+
+.publications-burger {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        border: 0;
+        outline: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        cursor: pointer;
+
+        &:active {
+            background: $grey-separator-color;
+        }
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 18px;
+            height: 14px;
+            border-bottom: 2px solid $main-color;
+            border-top: 2px solid $main-color;
+
+            @media (min-width: $breakpoint-md) {
+                display: none;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                height: 2px;
+                width: 100%;
+                left: 0;
+                transform: translateY(-50%);
+                background: $main-color;
+
+                @media (min-width: $breakpoint-md) {
+                    display: none;
+                }
+            }
+        }
+}
